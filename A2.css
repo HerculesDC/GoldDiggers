@@ -1,0 +1,35 @@
+html{
+    height: 100%;
+}
+body{
+    background-color: #704000;
+    color: silver;
+}
+h1{
+    text-align: center;
+    color: gold;
+    margin-left: auto;
+}
+p{
+    text-align: center;
+}
+.Underground{
+    margin: auto;
+    width: 640px;
+    height: 640px;
+    background-color: #502000;
+}
+/* I had to manually force the z-index of each canvas for rendering reasons.
+   Don't know if this is what's causing compatibility issues with Firefox...*/
+#Subterranean{
+    z-index: 0;
+}
+#Pickaxe{
+    position: absolute;
+    z-index: 1;
+}
+
+#Boulders{
+    position: absolute;
+    z-index: 2;
+}
